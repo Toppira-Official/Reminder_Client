@@ -26,6 +26,28 @@
       text-align: right !important;
     }
   }
+
+  .hero-section {
+    @apply bg-white py-20;
+  }
+
+  .hero-content {
+    max-width: 480px;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-content {
+      max-width: 540px;
+    }
+  }
+
+  .hero-label {
+    letter-spacing: 0.2em;
+  }
+
+  .hero-description {
+    max-width: 32rem;
+  }
 }
 
 .reminder-section {
