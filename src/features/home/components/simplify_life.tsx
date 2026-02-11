@@ -24,7 +24,7 @@ export const SimplifyLife: React.FC = () => {
           >
             <div className="hero-content flex w-full flex-col items-center md:items-start">
               <Text className="hero-text hero-label inline-flex items-center rounded-full bg-blue-50 px-5 py-1.5 text-xs font-medium tracking-wide text-blue-600 md:text-sm">
-                مرتبط با مکان
+                مکان هم مهمه
               </Text>
 
               <Title
@@ -35,10 +35,9 @@ export const SimplifyLife: React.FC = () => {
               </Title>
 
               <Paragraph className="hero-text hero-description mt-4! text-sm! leading-8! text-gray-600 sm:text-base!">
-                با یادآورهای مبتنی بر مکان، کارهای مهمت را دقیقاً همان زمانی که
-                لازم است انجام بده. مثلاً وقتی به خانه یا محل کار می‌رسی، تاپیرا
-                بهت یادآوری می‌کند چه کارهایی را باید همان‌جا انجام بدهی تا هیچ
-                جزئیاتی از قلم نیفتد.
+                یادآورها فقط وابسته به زمان نیستن. مکان دلخواهت رو مشخص کن، و
+                وقتی بهش برسی همون لحظه کارهای مرتبط ظاهر می‌شن. خانه، محل کار
+                یا هر جای دیگه — بدون فراموشی، بدون استرس.
               </Paragraph>
             </div>
           </Col>
