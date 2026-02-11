@@ -9,32 +9,38 @@ export const Hero: React.FC = () => {
   return (
     <section dir="rtl" className="bg-white py-16">
       <div className="container">
-        <Row
-          gutter={[32, 48]}
-          align="middle"
-          justify="space-between"
-          className="flex-col-reverse md:flex-row"
-        >
-          <Col xs={24} md={12} className="text-center md:text-right">
-            <div className="flex flex-col items-center md:items-end">
-              <Text className="mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600">
+        <Row gutter={[32, 48]} align="middle" justify="space-between">
+          <Col
+            xs={{ span: 24, order: 1 }}
+            md={{ span: 12, order: 1 }}
+            className="text-right"
+          >
+            <div className="flex w-full flex-col">
+              <Text
+                className="mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600"
+                style={{ textAlign: 'right', width: '100%' }}
+              >
                 یادآورهای هوشمند برای هر کاری
               </Text>
 
               <Title
                 level={1}
                 className="!mt-2 !text-3xl !leading-snug !font-black sm:!text-4xl md:!text-5xl"
+                style={{ textAlign: 'right', width: '100%' }}
               >
                 هرگز کاری را فراموش نکن.
               </Title>
 
-              <Paragraph className="!mt-4 !max-w-xl !text-sm !leading-8 text-gray-600 sm:!text-base">
+              <Paragraph
+                className="!mt-4 !text-sm !leading-8 text-gray-600 sm:!text-base"
+                style={{ textAlign: 'right', width: '100%' }}
+              >
                 برای کارهای مهمت یادآور بگذار، اعلان‌های تکرارشونده تنظیم کن و
-                مطمئن باش هیچ قرار روزانه، هفتگی یا ماهانه‌ای از قلم
-                نمی‌افتد. تاپیرا کمک می‌کند همیشه یک قدم جلوتر باشی.
+                مطمئن باش هیچ قرار روزانه، هفتگی یا ماهانه‌ای از قلم نمی‌افتد.
+                تاپیرا کمک می‌کند همیشه یک قدم جلوتر باشی.
               </Paragraph>
 
-              <div className="mt-8 flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center sm:justify-center md:justify-start">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center md:justify-start">
                 <Button
                   type="primary"
                   size="large"
@@ -55,15 +61,15 @@ export const Hero: React.FC = () => {
           </Col>
 
           <Col
-            xs={24}
-            md={12}
-            className="mb-4 flex justify-center md:mb-0 md:justify-start"
+            xs={{ span: 24, order: 2 }}
+            md={{ span: 12, order: 2 }}
+            className="mb-4 md:mb-0"
           >
-            <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
+            <div className="relative flex w-full justify-center md:justify-end">
               <img
                 src={HeroImage}
                 alt="نمایی از اپلیکیشن مدیریت کارهای تاپیرا"
-                className="w-full rounded-3xl shadow-2xl"
+                className="w-full max-w-xs rounded-3xl shadow-2xl sm:max-w-sm md:max-w-md"
               />
             </div>
           </Col>
