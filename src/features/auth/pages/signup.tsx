@@ -1,8 +1,9 @@
 import { Button, Divider, Form, Input, Typography } from 'antd';
 import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import { Link } from 'react-router';
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 interface SignUpFormValues {
   email: string;
@@ -96,7 +97,7 @@ export const SignUpPage: React.FC = () => {
               <Input.Password placeholder="دوباره رمز عبور را وارد کن" />
             </Form.Item>
 
-            <Form.Item className="mt-12! mb-0">
+            <Form.Item className="mt-6! mb-0">
               <Button
                 type="primary"
                 htmlType="submit"
@@ -108,6 +109,13 @@ export const SignUpPage: React.FC = () => {
               </Button>
             </Form.Item>
           </Form>
+
+          <div className="mt-4 text-center text-sm text-gray-600">
+            قبلاً ثبت‌نام کرده‌ای؟{' '}
+            <Link to="/login" className="text-blue-600">
+              وارد حساب‌ات شو
+            </Link>
+          </div>
         </div>
       </div>
     </section>
