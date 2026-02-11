@@ -5,7 +5,7 @@ import React from 'react';
 import { FaPlus } from 'react-icons/fa6';
 import { IoClose } from 'react-icons/io5';
 
-import { FaqItems } from '../../../shared/data/faq_items.ts';
+import FaqItems from '../../../shared/data/faq_items.ts';
 
 const { Title } = Typography;
 
