@@ -5,11 +5,11 @@ import React from 'react';
 import { FaPlus } from 'react-icons/fa6';
 import { IoClose } from 'react-icons/io5';
 
-import FaqItems from '../../../shared/data/faq_items.ts';
+import faqItems from '../../../shared/data/faq_items.ts';
 
 const { Title } = Typography;
 
-const collapseItems: CollapseProps['items'] = FaqItems.map(
+const collapseItems: CollapseProps['items'] = faqItems.map(
   ({ key, question, answer }) => ({
     key,
     label: question,
