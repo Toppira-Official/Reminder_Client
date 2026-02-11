@@ -18,8 +18,10 @@ export const Header = () => {
     <header className="flex h-18 items-center">
       <div className="container flex items-center justify-between">
         <div className="flex items-center gap-10">
-          <h1 className="text-4xl font-semibold">
-            <Link to="/">تاپیرا</Link>
+          <h1 className="! text-4xl font-semibold">
+            <Link className="text-black!" to="/">
+              تاپیرا
+            </Link>
           </h1>
 
           <ul className="hidden items-center gap-10 lg:flex">
