@@ -15,15 +15,13 @@ export const HeaderItem: React.FC<IHeaderItem> = ({ title, link, items }) => {
       </Link>
     );
 
-  const menuProps: MenuProps['items'] = [];
+  if (!items) return null;
 
-  for (const item of items!) {
-    menuProps.push({
-      key: item.title,
-      title: item.title,
-      label: <HeaderItem {...item} />,
-    });
-  }
+  const menuProps: MenuProps['items'] = items.map((item) => ({
+    key: item.title,
+    title: item.title,
+    label: <HeaderItem {...item} />,
+  }));
 
   return (
     <Dropdown menu={{ items: menuProps }}>

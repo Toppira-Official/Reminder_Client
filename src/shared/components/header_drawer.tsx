@@ -20,7 +20,7 @@ export const HeaderDrawer: React.FC<Props> = ({ open, onClose }) => {
         key: `link-${index}`,
         label: (
           <Link
-            to={item.link!}
+            to={item.link ?? '#'}
             onClick={onClose}
             className="px-1 text-base font-medium text-gray-800"
           >
@@ -44,7 +44,7 @@ export const HeaderDrawer: React.FC<Props> = ({ open, onClose }) => {
           {item.items.map((sub) => (
             <Link
               key={sub.title}
-              to={sub.link!}
+              to={sub.link ?? '#'}
               onClick={onClose}
               className="relative rounded-lg px-4 py-2 pr-4 text-sm text-gray-600 before:absolute before:inset-y-0 before:top-2 before:right-0 before:my-auto before:size-1.5 before:rounded-full before:bg-gray-700 hover:bg-gray-200"
             >

@@ -13,12 +13,12 @@ interface LoginFormValues {
 export const LoginPage: React.FC = () => {
   const [form] = Form.useForm<LoginFormValues>();
 
-  const handleFinish = (values: LoginFormValues) => {
-    console.log('login form submitted', values);
+  const handleFinish = (_values: LoginFormValues) => {
+    // TODO: اتصال به API ورود
   };
 
   const handleGoogleLogin = () => {
-    console.log('google login');
+    // TODO: اتصال به ورود با گوگل
   };
 
   return (

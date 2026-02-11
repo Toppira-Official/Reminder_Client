@@ -6,15 +6,15 @@ interface RequireAuthProps {
 }
 
 // TODO: این قسمت بعدا باید به سیستم احراز هویت واقعی وصل شود
-const useIsAuthenticated = () => {
+const isAuthenticated = () => {
   return false;
 };
 
 export const RequireAuth: React.FC<RequireAuthProps> = ({ children }) => {
   const location = useLocation();
-  const isAuthenticated = useIsAuthenticated();
+  const authenticated = isAuthenticated();
 
-  if (!isAuthenticated) {
+  if (!authenticated) {
     return <Navigate to="/" replace state={{ from: location }} />;
   }
 

@@ -14,12 +14,12 @@ interface SignUpFormValues {
 export const SignUpPage: React.FC = () => {
   const [form] = Form.useForm<SignUpFormValues>();
 
-  const handleFinish = (values: SignUpFormValues) => {
-    console.log('sign up form submitted', values);
+  const handleFinish = (_values: SignUpFormValues) => {
+    // TODO: اتصال به API ثبت‌نام
   };
 
   const handleGoogleSignUp = () => {
-    console.log('google sign up');
+    // TODO: اتصال به ثبت‌نام با گوگل
   };
 
   return (
