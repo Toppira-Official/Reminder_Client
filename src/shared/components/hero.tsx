@@ -29,12 +29,12 @@ export const Hero: React.FC = () => {
 
               <Title
                 level={1}
-                className="hero-text !mt-2 !text-3xl !leading-snug !font-black sm:!text-4xl md:!text-5xl"
+                className="hero-text mt-2! text-3xl! leading-snug! font-black! sm:text-4xl! md:text-5xl!"
               >
                 هرگز کاری را فراموش نکن.
               </Title>
 
-              <Paragraph className="hero-text !mt-4 !text-sm !leading-8 text-gray-600 sm:!text-base">
+              <Paragraph className="hero-text mt-4! text-sm! leading-8! text-gray-600 sm:text-base!">
                 برای کارهای مهمت یادآور بگذار، اعلان‌های تکرارشونده تنظیم کن و
                 مطمئن باش هیچ قرار روزانه، هفتگی یا ماهانه‌ای از قلم نمی‌افتد.
                 تاپیرا کمک می‌کند همیشه یک قدم جلوتر باشی.
@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
                 <Button
                   type="primary"
                   size="large"
-                  className="!rounded-full !px-8 !py-4 !text-base"
+                  className="rounded-full! px-8! py-4! text-base!"
                 >
                   رایگان شروع کن
                 </Button>
@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
                 <Button
                   type="default"
                   size="large"
-                  className="!rounded-full !border-none !px-6 !py-4 !text-base !shadow-none"
+                  className="rounded-full! border-none! px-6! py-4! text-base! shadow-none!"
                 >
                   دیدن امکانات
                 </Button>

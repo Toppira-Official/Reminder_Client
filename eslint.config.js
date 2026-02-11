@@ -7,4 +7,7 @@ export default defineConfig({
   sort: true,
   strict: true,
   tailwind: true,
+  rules: {
+    'better-tailwindcss/enforce-consistent-important-position': 'off',
+  },
 });
