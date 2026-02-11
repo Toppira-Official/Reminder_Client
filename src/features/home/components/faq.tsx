@@ -5,40 +5,17 @@ import React from 'react';
 import { FaPlus } from 'react-icons/fa6';
 import { IoClose } from 'react-icons/io5';
 
+import { FaqItems } from '../../../shared/data/faq_items.ts';
+
 const { Title } = Typography;
 
-const items: CollapseProps['items'] = [
-  {
-    key: '1',
-    label: 'چطور می‌توانم در تاپیرا یک یادآور بسازم؟',
-    children:
-      'فقط کافی است نوع یادآور را انتخاب کنی، عنوان و زمانش را مشخص کنی و روی ذخیره بزن. تاپیرا در زمان انتخاب‌شده بهت اطلاع می‌دهد.',
-  },
-  {
-    key: '2',
-    label: 'آیا می‌توانم یادآورهای تکرارشونده تنظیم کنم؟',
-    children:
-      'بله، می‌توانی برای کارهای روزانه، هفتگی، ماهانه یا حتی سفارشی، یادآور تکرارشونده تنظیم کنی تا به‌صورت خودکار تکرار شوند.',
-  },
-  {
-    key: '3',
-    label: 'یادآورهای مبتنی بر مکان چطور کار می‌کنند؟',
-    children:
-      'فقط کافی است یک مکان مثل خانه، محل کار یا فروشگاه را انتخاب کنی. زمانی که به آن نقطه نزدیک شوی، تاپیرا یادآور مرتبط را برایت فعال می‌کند.',
-  },
-  {
-    key: '4',
-    label: 'آیا تاپیرا روی همه دستگاه‌ها همگام می‌شود؟',
-    children:
-      'بله، حساب کاربری‌ات روی همه دستگاه‌هایی که وارد شده‌ای همگام است و یادآورهایت را از هر جایی می‌توانی ببینی و مدیریت کنی.',
-  },
-  {
-    key: '5',
-    label: 'آیا استفاده از تاپیرا رایگان است؟',
-    children:
-      'هسته اصلی تاپیرا رایگان است و می‌توانی به‌صورت نامحدود یادآور بسازی. برخی قابلیت‌های پیشرفته ممکن است در نسخه‌ی حرفه‌ای ارائه شوند.',
-  },
-];
+const collapseItems: CollapseProps['items'] = FaqItems.map(
+  ({ key, question, answer }) => ({
+    key,
+    label: question,
+    children: answer,
+  }),
+);
 
 export const Faq: React.FC = () => {
   const [activeKey, setActiveKey] = React.useState<React.Key | React.Key[]>(
@@ -69,7 +46,7 @@ export const Faq: React.FC = () => {
                 <FaPlus style={{ fontSize: 14 }} />
               )
             }
-            items={items}
+            items={collapseItems}
           />
         </div>
       </div>
