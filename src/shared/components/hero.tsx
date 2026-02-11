@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
             md={{ span: 12, order: 1 }}
             className="text-center md:text-right"
           >
-            <div className="flex w-full flex-col items-center md:items-end">
+            <div className="flex w-full flex-col items-center md:items-start">
               <Text className="hero-text mb-4 inline-flex items-center rounded-full bg-blue-50 px-4 py-1 text-sm font-medium text-blue-600">
                 یادآورهای هوشمند برای هر کاری
               </Text>
