@@ -121,3 +121,41 @@
     width: auto;
   }
 }
+
+.faq-section {
+  @apply bg-white py-20;
+}
+
+.faq-wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  text-align: center;
+}
+
+.faq-collapse {
+  background-color: transparent;
+}
+
+.faq-collapse .ant-collapse-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-collapse .ant-collapse-header {
+  padding-inline: 0;
+  padding-block: 12px;
+  direction: rtl;
+}
+
+.faq-collapse .ant-collapse-content-box {
+  padding-inline: 0;
+  padding-bottom: 16px;
+  color: #4b5563;
+  line-height: 2;
+}
+
+.faq-collapse .ant-collapse-expand-icon {
+  margin-inline-start: 12px;
+}
