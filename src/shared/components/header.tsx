@@ -29,7 +29,15 @@ export const Header = () => {
           </ul>
         </div>
 
-        <div>
+        <div className="flex items-center gap-3">
+          {/* دکمه ورود در موبایل */}
+          <Link
+            to="/login"
+            className="rounded-full border border-blue-600 px-4 py-1.5 text-sm text-blue-600 transition-all duration-100 hover:bg-blue-50 lg:hidden"
+          >
+            ورود
+          </Link>
+
           <Button
             onClick={() => setIsDrawerOpen(true)}
             className="lg:hidden!"
@@ -41,13 +49,13 @@ export const Header = () => {
           <div className="hidden items-center gap-4 lg:flex">
             <Link
               to="/signup"
-              className="rounded-2xl border border-blue-600 px-6 py-2 text-blue-600 transition-all duration-100 hover:bg-blue-50"
+              className="rounded-full border border-blue-600 px-6 py-2 text-sm font-medium text-blue-600 transition-all duration-100 hover:bg-blue-50"
             >
               ثبت‌نام
             </Link>
             <Link
               to="/login"
-              className="rounded-2xl border border-blue-600 bg-blue-600 px-8 py-2 text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600"
+              className="rounded-full border border-blue-600 bg-blue-600 px-8 py-2 text-sm font-medium text-white transition-all duration-100 hover:bg-transparent hover:text-blue-600"
             >
               ورود
             </Link>

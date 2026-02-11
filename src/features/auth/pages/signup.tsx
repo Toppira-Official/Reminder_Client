@@ -85,6 +85,7 @@ export const SignUpPage: React.FC = () => {
                     if (!value || getFieldValue('password') === value) {
                       return Promise.resolve();
                     }
+
                     return Promise.reject(
                       new Error('رمز عبور و تکرار آن یکسان نیست.'),
                     );
@@ -95,7 +96,7 @@ export const SignUpPage: React.FC = () => {
               <Input.Password placeholder="دوباره رمز عبور را وارد کن" />
             </Form.Item>
 
-            <Form.Item className="mt-4 mb-0">
+            <Form.Item className="mt-12! mb-0">
               <Button
                 type="primary"
                 htmlType="submit"
