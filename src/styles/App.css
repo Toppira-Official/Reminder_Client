@@ -27,3 +27,48 @@
     }
   }
 }
+
+.reminder-section {
+  @apply bg-white py-20;
+}
+
+.reminder-content {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.reminder-segmented {
+  direction: rtl;
+}
+
+.reminder-segmented .ant-segmented-group {
+  border-radius: 9999px;
+  padding: 4px;
+  background-color: #e5e7eb;
+}
+
+.reminder-segmented .ant-segmented-item {
+  border-radius: 9999px;
+  font-weight: 600;
+  padding-inline: 16px;
+}
+
+.reminder-segmented .ant-segmented-item-selected {
+  background-color: #111827;
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.reminder-segmented .ant-segmented-thumb {
+  border-radius: 9999px;
+}
+
+@media (max-width: 640px) {
+  .reminder-segmented {
+    width: auto;
+  }
+
+  .reminder-segmented .ant-segmented-group {
+    width: auto;
+  }
+}
