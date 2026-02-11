@@ -3,7 +3,7 @@ import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link } from 'react-router';
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 interface SignUpFormValues {
   email: string;
