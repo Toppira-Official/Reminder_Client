@@ -1,127 +1,133 @@
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Thin.woff2") format("woff2");
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-UltraLight.woff2") format("woff2");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-UltraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-DemiBold.woff2") format("woff2");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-DemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-ExtraBold.woff2") format("woff2");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-Black.woff2") format("woff2");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Dana";
-    src: url("../assets/fonts/dana/Dana-ExtraBlack.woff2") format("woff2");
-    font-weight: 950;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Dana';
+  src: url('../assets/fonts/dana/Dana-ExtraBlack.woff2') format('woff2');
+  font-weight: 950;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-XLight.woff2") format("woff2");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-XLight.woff2')
+    format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-Light.woff2')
+    format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-Book.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-Book.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-Medium.woff2')
+    format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Operator Mono";
-    src: url("../assets/fonts/operator_mono/OperatorMono-BoldItalic.woff2") format("woff2");
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
+  font-family: 'Operator Mono';
+  src: url('../assets/fonts/operator_mono/OperatorMono-BoldItalic.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
