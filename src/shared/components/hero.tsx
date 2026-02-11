@@ -9,7 +9,14 @@ export const Hero: React.FC = () => {
   return (
     <section dir="rtl" className="bg-white py-16">
       <div className="container">
-        <Row gutter={[32, 48]} align="middle" justify="space-between">
+        <Row
+          gutter={[
+            { xs: 16, md: 32 },
+            { xs: 16, md: 48 },
+          ]}
+          align="middle"
+          justify="space-between"
+        >
           <Col
             xs={{ span: 24, order: 1 }}
             md={{ span: 12, order: 1 }}
