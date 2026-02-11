@@ -48,7 +48,7 @@ export const SimplifyLife: React.FC = () => {
             md={{ span: 12, order: 2 }}
             className="mb-4 md:mb-0"
           >
-            <div className="relative flex w-full justify-center md:justify-end">
+            <div className="relative flex w-full justify-center">
               <img
                 src={SimplifyImage}
                 alt="نمونه‌ای از لیست موقعیت‌های مختلف برای یادآوری"
