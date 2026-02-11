@@ -1,5 +1,5 @@
 {
   "language": "en, fa, fa-IR",
-  "words": ["fullstacksjs", "Toppira", "تاپیرا"],
+  "words": ["fullstacksjs", "Toppira", "تاپیرا", "اپلیکیشن", "جلوتر"],
   "import": ["@cspell/dict-fa-ir/cspell-ext.json"]
 }
