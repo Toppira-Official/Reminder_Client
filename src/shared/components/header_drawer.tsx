@@ -3,6 +3,7 @@ import type { CollapseProps } from 'antd';
 import { Collapse, Drawer } from 'antd';
 import React from 'react';
 import { FaAngleDown } from 'react-icons/fa6';
+import { IoPersonCircleOutline } from 'react-icons/io5';
 import { Link } from 'react-router';
 
 import Logo from '../../assets/logo.jpeg';
@@ -11,9 +12,14 @@ import { HeaderItems } from '../data/header_items';
 interface Props {
   open: boolean;
   onClose?: (e: KeyboardEvent | React.KeyboardEvent | React.MouseEvent) => void;
+  userDisplayName?: string | null;
 }
 
-export const HeaderDrawer: React.FC<Props> = ({ open, onClose }) => {
+export const HeaderDrawer: React.FC<Props> = ({
+  open,
+  onClose,
+  userDisplayName,
+}) => {
   const items: CollapseProps['items'] = HeaderItems.map((item, index) => {
     if (!item.items) {
       return {
@@ -69,6 +75,16 @@ export const HeaderDrawer: React.FC<Props> = ({ open, onClose }) => {
       }
       className="p-0!"
     >
+      {userDisplayName != null && (
+        <Link
+          to="/dashboard/me"
+          onClick={onClose}
+          className="header-drawer-user"
+        >
+          <IoPersonCircleOutline className="header-drawer-user-icon" />
+          <span>{userDisplayName || 'حساب من'}</span>
+        </Link>
+      )}
       <Collapse
         ghost
         expandIconPlacement="end"

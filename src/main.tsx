@@ -13,6 +13,7 @@ if (rootElement) {
         theme={{
           token: {
             fontFamily: 'Dana',
+            colorPrimary: '#007aff',
           },
         }}
         direction="rtl"

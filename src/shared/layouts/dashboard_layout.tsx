@@ -1,25 +1,41 @@
-import { Layout } from 'antd';
 import React from 'react';
-import { Outlet } from 'react-router';
+import { Link, Outlet, useLocation } from 'react-router';
+import { IoChevronForward } from 'react-icons/io5';
 
-const { Header: AntHeader, Sider, Content } = Layout;
+const NAV_ITEMS = [{ path: '/dashboard/me', label: 'پروفایل' }];
 
 export const DashboardLayout: React.FC = () => {
+  const { pathname } = useLocation();
+
   return (
-    <Layout className="min-h-screen bg-slate-50">
-      <AntHeader className="flex items-center justify-between bg-white px-6 shadow-sm">
-        <h1 className="text-xl font-semibold">تاپیرا - داشبورد</h1>
-      </AntHeader>
-      <Layout>
-        <Sider
-          width={240}
-          className="hidden bg-white shadow-sm lg:block"
-          breakpoint="lg"
-        />
-        <Content className="p-4 lg:p-8">
+    <div className="dashboard-layout">
+      <header className="dashboard-header">
+        <Link to="/" className="dashboard-back">
+          <IoChevronForward className="dashboard-back-icon" />
+          <span>بازگشت</span>
+        </Link>
+        <Link to="/dashboard" className="dashboard-brand">
+          تاپیرا
+        </Link>
+      </header>
+      <div className="dashboard-body">
+        <aside className="dashboard-sidebar">
+          <nav className="dashboard-nav">
+            {NAV_ITEMS.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`dashboard-nav-link ${pathname === item.path ? 'active' : ''}`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </aside>
+        <main className="dashboard-main">
           <Outlet />
-        </Content>
-      </Layout>
-    </Layout>
+        </main>
+      </div>
+    </div>
   );
 };
